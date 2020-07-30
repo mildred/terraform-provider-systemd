@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/mildred/terraform-provider-sys/sys"
+	"github.com/mildred/terraform-provider-systemd/systemd"
 )
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
-		ProviderFunc: sys.Provider,
+		ProviderFunc: systemd.Provider,
 	})
 }
